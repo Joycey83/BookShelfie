@@ -1,0 +1,1 @@
+# Insert book records in the books table
