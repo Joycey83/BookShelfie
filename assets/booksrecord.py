@@ -16,15 +16,16 @@ def insert_record():
         book_publisher = input("Enter publisher:")
         book_pub_year = input("Enter book publication year:")
         isbn_number = input("Enter ISBN Number:")
+        book_price = input("Enter the price: ")
         book_genre = input("Enter book genre:")
         book_lang = input("Enter the language: ")
         book_pg_count = input("Enter the page count: ")
 
-        dbCursor.execute("INSERT INTO books (Title,Author,Publisher,Publication_year,ISBN,Genre,Language,Page_count) VALUES(?,?,?,?,?,?,?,?)",(book_title,author_name,book_publisher,book_pub_year,isbn_number,book_genre,book_lang,book_pg_count))
+        dbCursor.execute("INSERT INTO books (Title,Author,Publisher,Publication_year,ISBN,Genre,Language,Page_count,Price) VALUES(?,?,?,?,?,?,?,?)",(book_title,author_name,book_publisher,book_pub_year,isbn_number,book_price,book_genre,book_lang,book_pg_count))
 
         dbCon.commit()
 
-        print(f"{book_title}, {author_name}, {book_publisher}, {book_pub_year}, {isbn_number}, {book_genre}, {book_lang} and {book_pg_count} inserted into the books table")
+        print(f"{book_title}, {author_name}, {book_publisher}, {book_pub_year}, {isbn_number}, {book_price}, {book_genre}, {book_lang} and {book_pg_count} inserted into the books table")
     
     except sql.OperationalError as oe:
         print(f"failed because of {oe}")
