@@ -14,3 +14,8 @@ def db_access():
             return dbCon, dbCursor
     except sql.OperationalError as oe:
         print(f"connection failed: {oe}")
+
+
+if __name__ == "__main__":
+    db_access()
+    
