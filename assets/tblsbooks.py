@@ -24,4 +24,8 @@ CREATE TABLE "books" (
 	PRIMARY KEY("BookID" AUTOINCREMENT)
 )"""
 )
+    
+
+if __name__ == "__main__":
+    books_tbls()
 
