@@ -20,7 +20,7 @@ def insert_record():
         book_lang = input("Enter the language: ")
         book_pg_count = input("Enter the page count: ")
 
-        dbCursor.execute("INSERT INTO songs (Title,Author,Publisher,Publication_year,ISBN,Genre,Language,Page_count) VALUES(?,?,?,?,?,?,?,?)",(book_title,author_name,book_publisher,book_pub_year,isbn_number,book_genre,book_lang,book_pg_count))
+        dbCursor.execute("INSERT INTO books (Title,Author,Publisher,Publication_year,ISBN,Genre,Language,Page_count) VALUES(?,?,?,?,?,?,?,?)",(book_title,author_name,book_publisher,book_pub_year,isbn_number,book_genre,book_lang,book_pg_count))
 
         dbCon.commit()
 
