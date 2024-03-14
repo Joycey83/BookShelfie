@@ -29,3 +29,6 @@ def insert_record():
     except sql.OperationalError as oe:
         print(f"failed because of {oe}")
 
+if __name__ == "__main__":
+    insert_record()
+
