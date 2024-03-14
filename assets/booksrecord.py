@@ -24,3 +24,5 @@ def insert_record():
 
         dbCon.commit()
 
+        print(f"{book_title}, {author_name}, {book_publisher}, {book_pub_year}, {isbn_number}, {book_genre}, {book_lang} and {book_pg_count} inserted into the books table")
+
