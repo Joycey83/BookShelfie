@@ -9,6 +9,8 @@ def books_tbls():
 
     dbCon, dbCursor = db_access()
 
+    
+
     dbCursor.execute(
     """
 CREATE TABLE "books" (
@@ -24,6 +26,18 @@ CREATE TABLE "books" (
 	PRIMARY KEY("BookID" AUTOINCREMENT)
 )"""
 )
+    dbCursor.execute(
+    """
+    ALTER TABLE books
+    ADD COLUMN Price REAL
+    """)
+
+    dbCon.commit()
+
+
+
+
+
     
 
 if __name__ == "__main__":
