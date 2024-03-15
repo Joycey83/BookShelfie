@@ -22,8 +22,11 @@ def read_all_books():
                
                print(f"{aBook[0]:<9}|{aBook[1]:<30}|{aBook[2]:<30}|{aBook[3]:<25}|{aBook[4]:<25}|{aBook[5]:<20}|{aBook[6]:<25}|{aBook[7]:<20}|{aBook[8]:<15}|{aBook[9]:<15}")
                print("-" * 100)
-               
+
         else:
            print("No books found in the books table")
     except  sql.OperationalError as oe:
         print(f"Failed to read because: {oe}")
+
+if __name__ == "__main__":
+    read_all_books()
