@@ -14,12 +14,12 @@ def insert_record():
         book_title = input("Enter book title:")
         author_name = input("Enter book author:")
         book_publisher = input("Enter publisher:")
-        book_pub_year = input("Enter book publication year:")
+        book_pub_year = int(input("Enter book publication year:"))
         isbn_number = input("Enter ISBN Number:")
         book_genre = input("Enter book genre:")
         book_lang = input("Enter the language: ")
-        book_pg_count = input("Enter the page count: ")
-        book_price = input("Enter the price: ")
+        book_pg_count = int(input("Enter the page count: "))
+        book_price = float(input("Enter the price: "))
 
         dbCursor.execute("INSERT INTO books (Title,Author,Publisher,Publication_year,ISBN,Genre,Language,Page_count,Price) VALUES(?,?,?,?,?,?,?,?,?)",(book_title,author_name,book_publisher,book_pub_year,isbn_number,book_genre,book_lang,book_pg_count,book_price))
 
