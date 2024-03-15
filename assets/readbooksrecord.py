@@ -19,8 +19,9 @@ def read_all_books():
             print("*" * 100)
 
             for aBook in all_books:
+                aBook = [value if value is not None else '' for value in aBook]
                 print(f"{aBook[0]:<9}|{aBook[1]:<30}|{aBook[2]:<10}|{aBook[3]:<10}|{aBook[4]:<10}|{aBook[5]:<10}|{aBook[6]:<10}|{aBook[7]:<10}|{aBook[8]:<10}|{aBook[9]:<10}")
-                print("-" * 300)
+                print("-" * 150)
             
             dbCon.commit()
 
