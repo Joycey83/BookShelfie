@@ -34,7 +34,7 @@ def report():
             rows = dbCursor.fetchall()
 
             if not rows:
-                print(f"No record with field {search_field} matching {str_input} in the songs table")
+                print(f"No record with field {search_field} matching {str_input} in the books table")
             else:
                 # display all matched records from the books table
                 print("*" * 140)
