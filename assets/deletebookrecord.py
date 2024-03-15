@@ -20,3 +20,6 @@ def delete_book_record():
            print(f"The record with the book ID {book_id} deleted!!")
     except  sql.OperationalError as oe:
           print(f"Failed to read because: {oe}")
+
+if __name__ == "__main__":
+    delete_book_record()
