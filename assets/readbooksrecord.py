@@ -15,7 +15,7 @@ def read_all_books():
         if all_books:
             print("*" * 140)
             # format output BookID, Title, Author, Publisher etc
-            print(f"{'BookID':<6}|{'Title':<15}|{'Author':<15}|{'Publisher':<15}|{'Publication_year':<15}|{'ISBN':<15}|{'Genre':<15}|{'Language':<10}|{'Page_count':<10}|{'Price':<10}")
+            print(f"{'BookID':<9}|{'Title':<30}|{'Author':<10}|{'Publisher':<10}|{'Publication_year':<10}|{'ISBN':<10}|{'Genre':<10}|{'Language':<10}|{'Page_count':<10}|{'Price':<10}")
             print("*" * 140)
 
             for aBook in all_books:
