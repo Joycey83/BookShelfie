@@ -20,3 +20,15 @@ def books_menu():
  
     # call/invoke invoke the read_file funcion and assign it to a variable
     menu_choices = read_file("assets/dbmenu.txt")
+
+    # display the contents held in the menu_choices repeatedly
+    while option not in optionsList:
+        print(menu_choices)
+ 
+        # re-assign the options variable to accept string user input
+        option = input("Enter an option from the menu choices above: ") # "1"/"2"/"4.5..6.."
+ 
+        # check if the value entred and stored in the option variable is in the optionsList
+        if option not in optionsList:
+            print(f"{option} is not a valid choice! ")
+    return option
