@@ -67,3 +67,7 @@ def update_book_record():
 
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
+if __name__ == "__main__":
+    update_book_record()
