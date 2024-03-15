@@ -60,5 +60,10 @@ def update_book_record():
                 dbCon.commit()
                 print(f"Record {book_id} updated in the books table")
 
+        else:
+                print("Invalid choice, please enter Y or N")
+    except sql.OperationalError as e:
+        print(f"Update failed: {e}")
+
     except Exception as e:
         print(f"An error occurred: {e}")
