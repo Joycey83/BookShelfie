@@ -27,6 +27,9 @@ def insert_record():
 
         print(f"{book_title}, {author_name}, {book_publisher}, {book_pub_year}, {isbn_number}, {book_genre}, {book_lang}, {book_pg_count} and {book_price} inserted into the books table")
     
+    
+    except ValueError:
+        print("You entered an invalid value. Please try again.")
     except sql.OperationalError as oe:
         print(f"failed because of {oe}")
 
