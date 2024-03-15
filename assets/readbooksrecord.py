@@ -12,13 +12,7 @@ def read_all_books():
 
 
 
-        def read_all_books():
-    try:
-        dbCon, dbCursor = db_access()
-
-        dbCursor.execute("SELECT * FROM books")
-
-        all_books = dbCursor.fetchall()
+   
 
         if all_books:
             print("*" * 300)
