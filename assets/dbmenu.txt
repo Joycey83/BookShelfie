@@ -1,0 +1,8 @@
+The Bookshelfie database menu options:
+Enter:
+1. Print all records
+2. Add a new Book record
+3. Update an existing Book record
+4. Delete an existing Book record
+5. Select database report 
+6. Exit 
